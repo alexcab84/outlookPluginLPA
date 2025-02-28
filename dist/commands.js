@@ -1,0 +1,2 @@
+Office.onReady((function(){})),Office.actions.associate("action",(function(e){var i={type:Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,message:"Performed action.",icon:"Icon.80x80",persistent:!0};Office.context.ui.displayDialogAsync("https://localhost:3000/taskpane.html",{height:30,width:20},(function(e){var i=e.value;i.addEventHandler(Office.EventType.DialogMessageReceived,(function(e){i.close(),processMessage(e)}))})),Office.context.mailbox.item.notificationMessages.replaceAsync("action",i),e.completed()}));
+//# sourceMappingURL=commands.js.map

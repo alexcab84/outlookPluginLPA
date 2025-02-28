@@ -1,0 +1,13 @@
+{
+    "url_server": "https://localhost:8443",
+    "ip_client": "localhost",
+    "port_client": "3000",
+    "templateId": "508D2F93-0000-C110-AAAC-B5BE4279A028",
+    "to": "To",
+    "from": "From",
+    "subject": "EmailSubject",
+    "body": "Mail_Body",
+    "cc": "CarbonCopy",
+    "sentOn": "SentOn",
+    "receivedOn": "ReceivedOn"
+}

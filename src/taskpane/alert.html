@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Alert</title>
+    <style>
+        body {
+            overflow: hidden;  /* Evita la barra de desplazamiento y redimensionado */
+        }
+    </style>
+</head>
+<body>
+    <div id="mensaje">
+
+    </div>
+    <script>
+        // Obtener la URL actual
+        let url = new URL('https://localhost:3000/alert.html?param=Error%20al%20subir%20el%20documento:%20For%20input%20string:%20%2210g%22');
+
+        // Usar URLSearchParams para obtener el valor del parámetro 'param'
+        let params = new URLSearchParams(url.search);
+        let paramValue = params.get('param');
+        let mensaje = document.getElementById("mensaje");
+        let h1 = document.createElement("h1");
+        h1.innerText = paramValue;
+        mensaje.appendChild(h1);
+    </script>
+    
+</body>
+</html>
